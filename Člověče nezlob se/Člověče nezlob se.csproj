@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D05F233-5621-4239-AEF7-C666C996CBF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Člověče_nezlob_se</RootNamespace>
+    <AssemblyName>Člověče nezlob se</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Uvod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uvod.Designer.cs">
+      <DependentUpon>Uvod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nastaveni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nastaveni.Designer.cs">
+      <DependentUpon>Nastaveni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hra.Designer.cs">
+      <DependentUpon>Hra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Uvod.resx">
+      <DependentUpon>Uvod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nastaveni.resx">
+      <DependentUpon>Nastaveni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hra.resx">
+      <DependentUpon>Hra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElevatorMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizzicato.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Červená figurka úvod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zelená figurka úvod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kostka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaCtyri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaDva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaJedna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaPet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaSest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KostkaTri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice Roll Sound Effects.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Policko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolickoCervena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolickoModra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolickoZelena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PolickoZluta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hodKostky.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prechodZC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prechodZM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prechodZZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prechodCM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figurkaModr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figurkaZelen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figurkaCerv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figurkaZlut.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
